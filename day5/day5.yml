@@ -1,0 +1,64 @@
+- name: day5_dump
+  hosts: local
+  become: true
+  become_user: "{{ pg_user }}"
+  tasks:
+  - name: Dump db.
+    postgresql_db:
+     name: "{{ db }}"
+     state: dump
+     target: "{{ file }}"
+
+- name: day5_create
+  hosts: remote
+  become: true
+  become_user: "{{ pg_user }}"
+  tasks:
+  - name: Create db.
+    postgresql_db:
+     name: "{{ db }}"
+     state: present
+
+- name: day5_create_user
+  hosts: remote
+  become: true
+  become_user: "{{ pg_user }}"
+  tasks:
+  - name: Create user.
+    postgresql_user:
+     db: "{{ db }}"
+     name: "{{ user }}"
+     password: "{{ password }}"
+     expires: infinity
+     priv: ALL
+
+- name: day5_enable_conn
+  hosts: remote
+  become: true
+  become_user: "{{ pg_user }}"
+  tasks:
+  - name: Enable networking.
+    postgresql_pg_hba:
+     dest: "{{ pg_hba }}"
+     contype: host
+     users: "{{ user }}"
+     databases: "{{ db }}"
+     source: "{{ me }}"
+     method: md5
+
+- name: day5_reload
+  hosts: remote
+  become: true
+  tasks:
+  - name: Reload postgres.
+    ansible.builtin.service:
+     name: postgresql
+     state: reloaded
+
+- name: day5_restore
+  hosts: local
+  become: true
+  tasks:
+  - name: Restore db.
+    ansible.builtin.shell:
+     cmd: export PGPASSWORD='{{ password }}'; psql -h "{{ server }}" -U "{{ user }}" -d "{{ db }}" -a -f "{{ file }}"

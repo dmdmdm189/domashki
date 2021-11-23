@@ -1,0 +1,22 @@
+dm ansible_host=dm ansible_ssh_private_key_file=/home/dyurchenko/.ssh/id_rsa
+olga ansible_host=olga ansible_ssh_private_key_file=/home/dyurchenko/.ssh/id_rsa
+
+[remote]
+olga
+
+[local]
+dm
+
+[all]
+dm
+olga
+
+[all:vars]
+db=test_dyurchenko
+user=testuser_dyurchenko
+pg_user=postgres
+file=/tmp/{{ db }}.sql
+password=pass
+me=dm
+server=olga
+pg_hba=/var/lib/pgsql/data/pg_hba.conf

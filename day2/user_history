@@ -1,0 +1,170 @@
+uname -a
+w
+touch file
+ls -la
+mc
+cat .bashrc 
+cat /etc/bashrc
+chown centos file
+sudo chown centos file
+vi file 
+cat file 
+vi file 
+grep smth file
+grep o file
+man man
+ls -l /var/log
+less /var/log/dmesg 
+ps auxww
+ps auxww|awk '{print $1}'
+ps auxww|awk '{print $1}'|uniq
+ps auxww|awk '{print $1}'|uniq -u
+for i in {1..10}; do echo $i; done
+echo $PATH
+env
+export e="ha"
+echo $e
+vim script
+chmod 700 script 
+./script 
+chmod 600 script 
+sh ./script 
+crontab -l
+cat /etc/fstab 
+cat /etc/resolv.conf 
+free -m
+df -h
+df -T
+locale
+vi ~/.ssh/authorized_keys
+ls -la
+mkdir .ssh
+vi ~/.ssh/authorized_keys
+chmod 600 .ssh/authorized_keys 
+vi ~/.ssh/authorized_keys
+less /var/log/messages 
+cat .ssh/authorized_keys 
+ls /|grep tmp
+ls -l /|grep tmp
+ls -la
+chmod 600 .ssh/
+to
+top
+pstree
+vi .ssh/authorized_keys 
+chmod 600 .ssh/authorized_keys 
+chmod 700 .ssh/
+chmod 600 .ssh/authorized_keys 
+vi .ssh/authorized_keys 
+passwd
+sudo -s
+sudo su
+ls
+mkdir scripts
+cd scripts/
+mkdir 00
+cd 00
+vi script.sh
+chmod 755 script.sh 
+./script.sh 
+ls ~
+ls ~/1/
+ls ~/1/2/
+rm -r ~/1
+cd ../
+mkdir 01
+cd 01/
+cat /etc/fstab > cat\ \/etc\/fstab
+ls
+cat /etc/fstab > "cat\ \/etc\/fstab"
+ls
+ls -la
+cat /etc/fstab > cat_etc_fstab.out
+cat cat_etc_fstab.out 
+df -h > df-h.out
+cat df-h.out 
+du -sh ~ > du-sh.out
+cat du-sh.out 
+ls -l /var/log/messages
+ls -l /|grep opt
+passwd
+ls
+vi scripts/00/script.sh 
+./scripts/
+./scripts/00/script.sh 
+ls
+rm -r 1/
+sudo -s
+date
+egrep "^Nov  1 03" /var/log/messages
+man 5 sshd_config
+mcedit stds.sh
+mcedit regulars.sh
+chmod 755 regulars.sh 
+./regulars.sh 
+mcedit regulars.sh
+./regulars.sh 
+mcedit regulars.sh
+./regulars.sh 
+mcedit regulars.sh
+./regulars.sh 
+mcedit regulars.sh
+./regulars.sh 
+mcedit regulars.sh
+./regulars.sh 
+mcedit regulars.sh
+./regulars.sh 
+mcedit regulars.sh
+./regulars.sh 
+mcedit regulars.sh
+./regulars.sh 
+mcedit regulars.sh
+./regulars.sh 
+mcedit regulars.sh
+./regulars.sh 
+mcedit regulars.sh
+./regulars.sh 
+mcedit regulars.sh
+./regulars.sh 
+mcedit regulars.sh
+sudo su
+ps auxww|grep nginx
+sudo su
+ssh-keygen 
+mc
+ls -la
+cd
+ssh-copy-id -i ~/.ssh/id_rsa dyurchenko
+ssh-copy-id -i ~/.ssh/id_rsa dyurchenko@
+mc
+cat id_rsa.pub 
+mcedit authorized_keys 
+cd
+mc
+sudo su
+su someuser
+su - someuser
+ansible --version
+sudo su
+git clone https://github.com/dmdmdm189/test
+rm -r test/
+unalias rm
+rm -r test/
+sudo su
+sudo usermod -aG docker $USER
+sudo su
+ls -la /tmp/
+rm /tmp/test_dyurchenko.sql 
+mcview /tmp/test_dyurchenko.sql 
+psql 
+psql --help
+man psql
+ls -l /var/lib/pgsql/
+sudo su
+sudo -s
+mc
+su
+sudo su
+ps auxww
+ps auxww|grep docker
+sudo su

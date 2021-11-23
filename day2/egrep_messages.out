@@ -1,0 +1,8 @@
+Nov  1 03:01:01 centos-standard-2-8-100gb-4 systemd: Created slice User Slice of root.
+Nov  1 03:01:01 centos-standard-2-8-100gb-4 systemd: Started Session 136 of user root.
+Nov  1 03:07:01 centos-standard-2-8-100gb-4 systemd: Removed slice User Slice of root.
+Nov  1 03:29:50 centos-standard-2-8-100gb-4 systemd: Created slice User Slice of dyurchenko.
+Nov  1 03:29:50 centos-standard-2-8-100gb-4 systemd: Started Session 137 of user dyurchenko.
+Nov  1 03:29:50 centos-standard-2-8-100gb-4 systemd-logind: New session 137 of user dyurchenko.
+Nov  1 03:31:29 centos-standard-2-8-100gb-4 systemd-logind: Removed session 137.
+Nov  1 03:31:29 centos-standard-2-8-100gb-4 systemd: Removed slice User Slice of dyurchenko.

@@ -1,0 +1,27 @@
+- name: day4
+  hosts: webgroup
+  become: true
+  tasks:
+  - name: adduser
+    ansible.builtin.user:
+      name: someuser
+      expires: -1.0
+      generate_ssh_key: yes
+      password: "{{ '1234' | password_hash('sha512') }}"
+
+  - name: add ssh key to authorized keys
+    authorized_key:
+      user: someuser
+      state: present
+      key: "{{ lookup('file', '/home/someuser/.ssh/id_rsa.pub') }}"
+
+  - name: rm /tmp/test.conf
+    ansible.builtin.file:
+      path: /tmp/test.conf
+      state: absent
+
+  - name: add PS1
+    ansible.builtin.lineinfile:
+      path: /home/someuser/.bash_profile
+      line: export PS1="\u@\h [\t]> "
+

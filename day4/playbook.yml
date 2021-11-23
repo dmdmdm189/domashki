@@ -1,0 +1,6 @@
+- name: First playbook!
+  hosts: webgroup
+  become: true
+  tasks:
+  - name: Set hostname
+    shell: hostnamectl set-hostname vm00.stand.lan

@@ -1,0 +1,564 @@
+adduser -m dyurchenko
+passwd dyurchenko
+vim /etc/ssh/sshd_config 
+service sshd restart
+vim /etc/ssh/sshd_config 
+service sshd restart
+vim /etc/sudoers.d/dyurchenko
+ls -la
+ls -la
+chmod 600 authorized_keys 
+ls -la
+ls -la
+ls -la
+yum install mc
+mc
+cd
+adduser 
+useradd 
+adduser -D
+adduser -m testuser
+yum install finger
+finger testuser
+passwd testuser 
+mcedit /etc/ssh/sshd_config 
+service sshd reload
+ifconfig 
+passwd testuser 
+chmod 600 .ssh/authorized_keys
+mcedit /etc/ssh/sshd_config 
+service sshd reload
+mc
+egrep "^Nov  1 03" /var/log/messages
+egrep "^Nov  1 03" /var/log/messages > egrep_messages.out
+mc
+visudo 
+visudo 
+cd /etc/sudoers.d/
+ls -la
+mc
+mcedit /etc/ssh/sshd_config 
+service sshd reload
+service sshd reload
+mcedit /etc/ssh/sshd_config 
+service sshd reload
+mcedit /etc/ssh/sshd_config 
+gcc
+echo 123 |./regulars.sh
+./nfs-utils_env.sh
+ls
+mcedit regulars.sh 
+./regulars.sh 
+mcedit regulars.sh 
+./regulars.sh 
+mcedit regulars.sh 
+./regulars.sh 
+mcedit regulars.sh 
+./regulars.sh 
+mcedit regulars.sh 
+./regulars.sh 
+mcedit regulars.sh 
+./regulars.sh 
+mcedit regulars.sh 
+bash --version
+mcedit regulars.sh 
+mcedit regulars.sh 
+./regulars.sh 
+mcedit regulars.sh 
+./regulars.sh 
+mcedit regulars.sh 
+./regulars.sh 
+mcedit regulars.sh 
+./regulars.sh 
+mcedit regulars.sh 
+./regulars.sh 
+mcedit regulars.sh 
+./regulars.sh 
+mcedit regulars.sh 
+./regulars.sh 
+mcedit regulars.sh 
+./regulars.sh 
+mcedit regulars.sh 
+./regulars.sh 
+mcedit regulars.sh 
+./regulars.sh 
+mc
+ls *.sh
+ls -l *.sh
+chmod 755 stds.sh 
+mcedit stds.sh 
+ls -l /etc/passwd
+mcedit stds.sh 
+./stds.sh 
+mcedit stds.sh 
+./stds.sh 
+mcedit stds.sh 
+./stds.sh 
+mcedit stds.sh 
+./stds.sh 
+mcedit stds.sh 
+./stds.sh 
+mcedit stds.sh 
+./stds.sh 
+./stds.sh 
+mcedit stds.sh 
+./stds.sh 
+mcedit stds.sh 
+./stds.sh 
+mc
+uname -a
+cat /etc/*elease
+yum install epel-release
+yum repolist 
+wget "https://github.com/curl/curl/releases/download/curl-7_79_1/curl-7.79.1.tar.bz2"
+yum groupinstall 'Development Tools'
+make
+gcc -v
+mc
+cd ./curl-7.79.1/
+mc
+./configure 
+./configure --with-openssl
+yum search openssl-dev
+yum install openssl-devel
+./configure --with-openssl
+less /proc/cpuinfo 
+grep processor /proc/cpuinfo |wc -l
+make -j3
+type curl
+curl --version
+make install
+/usr/local/bin/curl -v
+yum install git ansible
+yum install nginx php-fpm
+cd /etc/systemd/system/nginx.service.d/
+mc
+service nginx start
+cd /etc/systemd/system
+mc
+systemctl enable nginx.service
+netstat -tupln
+mc
+systemctl daemon-reload
+systemctl status nginx
+ps auxww|grep nginx
+kill -9 17683
+ps auxww|grep nginx
+killall -KILL nginx
+ps auxww|grep nginx
+ps auxww|grep nginx
+reboot 
+cd
+yum search ansible
+yum install -y centos-release-ansible-27
+yum install -y ansible
+yum install yum-plugin-remove-with-leaves
+yum remove centos-ansible-27
+yum install yum-plugin-remove-with-leaves
+yum-config-manager --save --setopt=centos-ansible-27.skip_if_unavailable=true
+yum install yum-plugin-remove-with-leaves
+yum remove ansible --remove-leaves
+yum autoremove
+yum search ansible
+yum install centos-release-ansible-27
+yum install centos-release-ansible-28
+yum install -y ansible
+git
+ls -la
+mcview /etc/ansible/ansible.cfg 
+mkdir ansible
+mcedit ansible/hosts
+cd ansible/
+ansible -i hosts all -m ping -u user -k
+ansible -i hosts all -m ping -u dyurchenko -k
+ansible --version
+mcview /etc/ansible/hosts 
+cd
+rm -r ansible/
+unalias rm
+rm -r ansible/
+yum remove centos-release-ansible-28
+yum remove ansible --remove-leaves
+yum autoremove
+cd /etc/yum.repos.d/
+mc
+history |grep epel
+yum update 
+yum install epel-release
+yum install ansible
+history |grep yum
+cd
+ansible -v
+ansible --version
+ifconfig 
+netstat -tunpl|grep 22
+date
+tail -f secure
+touch /tmp/test.conf
+ls /tmp/
+finger someuser
+cd /home/someuser/
+mc
+userdel -r someuser 
+mc
+tail /var/log/messages
+cd /var/log
+mc
+su - someuser 
+grep ansible -r /etc/yum.repos.d/
+yum remove ansible --remove-leaves
+unalias rm
+rm /etc/yum.repos.d/CentOS-SIG-ansible-27.repo
+yum update 
+yum search ansible
+cd
+yum install centos-release-ansible-27
+yum remove centos-release-ansible-27 --with-leaves
+yum remove centos-release-ansible-27 --remove-leaves
+yum install centos-release-ansible-27
+yum autoremove
+yum install ansible
+yum remove --remov-leaves centos-release-ansible-27
+yum remove --remove-leaves centos-release-ansible-27
+yum install ansible
+yum list installed 
+yum list installed |grep ansible
+yum install ansible
+yum install centos-release-ansible-27
+yum install nc
+grep -r ansible /etc/yum.repos.d/
+rm /etc/yum.repos.d/CentOS-SIG-ansible-27.repo
+yum update 
+yum remove --remove-leaves ansible.noarch ble
+yum remove --remove-leaves ansible
+yum install ansible
+ansible --version
+ls -a
+cd .ansible/
+ls
+mc
+mcedit .ansible.cfg
+mcedit ansible/hosts
+ls
+mkdir ansible
+mcedit ansible/hosts
+ansible -i hosts all -m ping -u dyurchenko
+ansible -i ansible/hosts all -m ping -u dyurchenko
+mcedit ansible/hosts 
+ansible -i ansible/hosts all -m ping -u dyurchenko
+ansible -i ansible/hosts all -m ping -u dyurchenko
+ansible -i ansible/hosts all -m shell -a 'uptime' -u dyurchenko
+ansible -i ansible/hosts all -m shell -a 'w' -u dyurchenko
+cd ansible/
+ansible -i hosts all -m shell -a 'ls -la' -u dyurchenko
+mcedit playbook.yml
+mcedit playbook.yml
+ansible-playbook playbook.yml -i hosts -u dyurchenko
+mcedit playbook.yml
+ansible-playbook playbook.yml -i hosts -u dyurchenko
+mcedit playbook.yml
+ansible-playbook playbook.yml -i hosts -u dyurchenko
+mcedit playbook.yml
+ansible-playbook playbook.yml -i hosts -u dyurchenko
+ansible-playbook playbook.yml -i hosts -u dyurchenko -K
+mc
+ansible-playbook playbook.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day4.yml -i ../hosts -u dyurchenko -K
+mc
+ansible-playbook day4.yml -i ../hosts -u dyurchenko -K
+mc
+ansible-playbook day4.yml -i ../hosts -u dyurchenko -K
+mc
+ansible-playbook day4.yml -i ../hosts -u dyurchenko -K
+mc
+ansible-playbook day4.yml -i ../hosts -u dyurchenko -K
+mc
+ansible-playbook day4.yml -i ../hosts -u dyurchenko -K
+history |grep php
+git clone https://github.com/dmdmdm189/test.git
+cd test/
+ls -la
+cat README.md 
+git status
+mcedit test
+git status
+git add
+git add .
+git commit -m "Add new file with text 'Hello World'"
+git push
+git config --global user.name "dmdmdm189"
+git config --global user.email dyurchenko@vsk.ru
+git push
+ssh-keygen -t ed25519 -C "dyurchenko@vsk.ru"
+ssh-add ~/.ssh/id_ed25519
+pwd
+cd ../
+echo "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" > git_token.txt
+cd test/
+git pusg https://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@github.com/dmdmdm189/test.git
+git push https://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@github.com/dmdmdm189/test.git
+mcedit ../git_push_example.txt
+git log
+git status
+git branch
+git revert 8d8c0f2f14a741c51a6f8ea4563e815112790014
+git status 
+git log 
+git push https://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@github.com/dmdmdm189/test.git
+yum install postgresql postgresql-server postgresql-libs postgresql-contrib python-psycopg2
+psql 
+yum install postgresql postgresql-server postgresql-libs postgresql-contrib python-psycopg2
+postgresql-setup initdb
+service postrgesql start
+service postgresql start 
+su postgres
+cd
+pg_dump -d test > test.sql
+su postgres
+man pg_dump
+pg_dump -d test > test.sql
+pg_dump --help
+su postgres
+ifconfig 
+netstat -tulpn
+curl -fsSL https://get.docker.com -o get-docker.sh
+sh ./get-docker.sh 
+docker pull grafana/grafana
+service docker start 
+docker pull grafana/grafana
+docker images
+docker run grafana/grafana -p 3000:3000
+docker run -p 3000:3000 grafana/grafana
+docker run -p 3000:3000 grafana/grafana -d
+docker run -p 3000:3000 -d grafana/grafana
+docker ps
+docker ps
+docker exec -it 44a57fa63eff sh
+docker ps
+docker build
+netstat -tulpn
+mcedit Dockerfile
+docker build
+docker build ./
+docker images 
+docker run a9251429e1bd
+docker run -p 8080:80 --name=nginx a9251429e1bd
+docker run nginx -d
+docker ps -a
+docker run -p 8080:80 -d a9251429e1bd
+docker ps -a
+docker stop a9251429e1bd
+docker stop e2230dcf9140
+mcedit Dockerfile 
+docker build .
+mcedit Dockerfile 
+docker build .
+ls
+cat file 
+mcedit Dockerfile 
+docker build .
+docker images
+docker run -d -p 8080:80 ca9fd7eb0305
+docker ps -a
+docker run -it 39648d0df988 sh
+docker run -it ca9fd7eb0305 sh
+cat Dockerfile 
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
+ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+docker-compose --version
+cat > docker-compose.yml
+docker-compose up
+docker-compose up -d
+docker ps
+docker-compose down
+mcedit docker-compose.yml 
+cd
+cd .ssh/
+ls
+mc
+cd
+mkdir git_test_ssh
+cd git_test_ssh/
+cat > README.md
+git init -b main
+git init
+gh repo create git_test_ssh
+git add
+git add .
+git commit
+git commit
+git branch -M main
+git remote add origin git@github.com:dmdmdm189/git_test_ssh.git
+git push -u origin main
+mc
+cat .ssh/id_ed25519.pub 
+cd
+mc
+mkdir novaya_repa
+cd novaya_repa/
+echo "# novaya_repa" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:dmdmdm189/novaya_repa.git
+git push -u origin main
+adduser olga
+finger olga
+ls /home/
+ls -la /home/olga/
+passwd olga
+mcedit /etc/ssh/sshd_config 
+service sshd reload
+mcedit /etc/ssh/sshd_config 
+service sshd reload
+cd /etc/sudoers.d/
+mc
+mcedit /etc/ssh/sshd_config 
+cd /home/olga/
+mc
+cat authorized_keys 
+cd /home/olga/
+mkdir .ssh
+mcedit .ssh/authorized_keys
+service sshd reload
+ls -la
+chown -R olga.olga .ssh/
+chmod 700 .ssh/
+chmod 600 .ssh/authorized_keys 
+service sshd reload
+cd /etc/sudoers.d/
+mc
+w
+su postgres
+netstat -tunpl
+ifconfig 
+ping 192.168.248.9
+netstat -tunpl
+netstat -tunpl|grep post
+psql -U postgres -c 'SHOW config_file'
+su postgres
+mcedit /var/lib/pgsql/data/postgresql.conf
+ifconfig 
+mcedit /var/lib/pgsql/data/postgresql.conf
+service postgresql restart
+netstat -tunpl|grep post
+mcedit /var/lib/pgsql/data/postgresql.conf
+service postgresql restart
+netstat -tunpl|grep post
+mcedit /etc/hosts
+ping dm
+ping olga
+mc
+cd
+ansible -i hosts olga -m shell -a 'uptime'
+cd ansible
+ls
+cd ../ansible1
+ansible -i hosts olga -m shell -a 'uptime'
+ansible -i hosts olga -m shell -a 'uptime'
+cd ~/.ssh/
+mc
+ansible -i hosts olga -m shell -a 'uptime' -u 'dyurchenko' -k
+ifconfig
+cd ~/ansible1
+mc
+cd /var/lib/pgsql/
+mc
+su postgres
+cd ~/ansible1
+mcedit playbook.yml 
+mcedit playbook.yml 
+mc
+cd ~/ansible1
+mc
+history |grep ansible
+ansible-playbook playbook.yml -i hosts -u dyurchenko -K
+ansible-playbook playbook.yml -i hosts -u dyurchenko -K
+ansible-playbook playbook.yml -i hosts -u dyurchenko -K
+ansible-playbook playbook.yml -i hosts -u dyurchenko -K
+ansible-playbook playbook.yml -i hosts -u dyurchenko -K
+mc
+history |grep day
+pwd
+cd ../../ansible1/playbooks/
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+psql -h olga -U testuser_dyurchenko -d test_dyurchenko -a -f /tmp/test_dyurchenko.sql
+psql -h dm -U testuser_dyurchenko -d test_dyurchenko -a -f /tmp/test_dyurchenko.sql
+psql -h dm -U testuser_dyurchenko -d test_dyurchenko -a -f /tmp/test_dyurchenko.sql
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+psql -h olga -U testuser_dyurchenko -d test_dyurchenko -a -f /tmp/test_dyurchenko.sql
+psql -h olga -U testuser_dyurchenko -d test_dyurchenko -a -f /tmp/test_dyurchenko.sql
+psql -h olga -U testuser_dyurchenko -d test_dyurchenko -a -f /tmp/test_dyurchenko.sql
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+ansible-playbook day5.yml -i ../hosts -u dyurchenko -K
+mc
+ansible-playbook day5.yml -i hosts -u dyurchenko -K
+cd /tmp/
+mc
+ansible-playbook day5.yml -i hosts -u dyurchenko -K
+ls /tmp/
+ls
+tar -czvf ../ans.tgz ./
+cd ../
+ls
+scp
+mv ans.tgz /home/dyurchenko/
+cd
+mc
+cd
+su postgres
+passwd olga
+su postgres
+iptables -t nat -nvL
+cd
+docker pull jenkins/jenkins:latest
+docker pull jenkins/jenkins:lts-jdk11
+docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts-jdk11 
+docker ps -a
+docker kill $(docker ps -q)
+docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts-jdk11 
